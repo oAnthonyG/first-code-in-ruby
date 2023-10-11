@@ -32,7 +32,11 @@ loop do
         result =  "O resltado da multiplicação de #{numero1} e #{numero2} é: #{numero1 * numero2}"
 
       elsif option == 4
-        result = "O resltado da divisão de #{numero1} e #{numero2} é: #{numero1 / numero2}"
+        if numero1 == 0 || numero2 == 0
+          puts 'Impossivel dividir por 0'
+        else
+          result = "O resltado da divisão de #{numero1} e #{numero2} é: #{numero1 / numero2}"
+        end
 
       else result = 'Opção invalida'
   end
