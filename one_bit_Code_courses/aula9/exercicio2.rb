@@ -4,7 +4,7 @@ class Carro
   end
 
   private
-
+|
   def find_km(text)
     regex = /\d+\s*km\/h/
     
